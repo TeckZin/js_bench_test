@@ -133,12 +133,12 @@ const arrayop = (size) => {
     const arr2 = new Array(size).fill(0).map(() => Math.random());
 
     // Array operations
-    const multiplication = arr1.map((val, i) => val * arr2[i]);
-    const sum = arr1.reduce((acc, val, i) => acc + val * arr2[i], 0);
+    arr1.map((val, i) => val * arr2[i]);
+    arr1.reduce((acc, val, i) => acc + val * arr2[i], 0);
 
     // Filter and map operations
-    const filtered = arr1.filter(val => val > 0.5);
-    const transformed = filtered.map(val => val * val);
+    arr1.filter(val => val > 0.5);
+    filtered.map(val => val * val);
 }
 
 
